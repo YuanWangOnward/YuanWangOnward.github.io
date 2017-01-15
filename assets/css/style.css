@@ -353,6 +353,10 @@ a:hover { text-decoration: underline; }
     margin-bottom: -120px;
 }
 
+p {
+    text-indent:10px;
+}
+
 #floater {
     float: left;
     height: 50%;
