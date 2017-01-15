@@ -352,3 +352,15 @@ a:hover { text-decoration: underline; }
     height: 50%;
     margin-bottom: -120px;
 }
+
+#floater {
+    float: left;
+    height: 50%;
+    margin-bottom: -120px;
+}
+
+#content {
+    clear: both;
+    height: 240px;
+    position: relative;
+}
