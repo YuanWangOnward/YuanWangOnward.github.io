@@ -352,6 +352,7 @@ a:hover { text-decoration: underline; }
     width: 70%;
     height: 50%;
     margin-bottom: -120px;
+    text-align: center;
 }
 
 p {

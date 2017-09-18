@@ -34,24 +34,19 @@
         </div>
     </div>
     <div class="float-right-text-vertically-centered">
-        <div class="inner-right">
-            <!--Right content. Add your images or sidebar text to this side.-->
-
-            <!-- <p>Welcome to Yuan's home page.</p> -->
-            <p align="justify">
+        <div class="inner-right" >
+            <br>
+            <p  align="justify" style="">
                 I am an EE PhD candidate at
-                <a href="http://engineering.nyu.edu">Tandon School
-                    of Engineering</a> of
+                <a href="http://engineering.nyu.edu">Tandon School of Engineering</a>
+                of
                 <a href="https://www.nyu.edu">New York University</a>,
                 supervised by Prof.
                 <a href="http://engineering.nyu.edu/people/yao-wang">Yao Wang</a>
                 and cosupervised by Prof.
                 <a href="http://nyulangone.org/doctors/1538116645/yvonne-w-lui"> Yvonne W. Lui</a>.
-                I am a data scientist,
-                doing image/video/language processing with machine/deep learning.
-                I'm also have experience with big data and I'm actively learning GPU programming and AI now.
-                I believe that's the things will make a huge impact on the society soon.
-                Besides, it always feel good to learn something new.
+                I am a data scientist, doing image/video/language processing with machine/deep learning.
+                I also prepared myself for big data and I'm actively learning GPU programming and AI, which I think matters.
                 On this site, you can find some of my projects. Hope you enjoy :)
             </p>
         </div>
@@ -81,14 +76,16 @@
             <td>
                 <p align="justify">
                     Classical neural network focuses on performance of specific tasks,
-                    such as classification, tracking, considering little about internal meaning.
-                    We use neural network as a tool to understand the causal architecture in the brain.
-                    We design neural network deep down based on previous biophysical model, Dynamic Causal Modeling
-                    (DCM), proposing a generalized RNN (GRNN) and show that DCM can be cast as a specific GRNN.
-                    The new DCM-RNN extends DCM with a more flexible framework supporting more biophysically
-                    plausible modifications, new estimation methods, and neural network compatibility.
+                    such as classification, detection, and recognition.
+                    The physical meaning of the internal structure of the neural networks is not of concern.
+                    Using neural networks as a tool of revealing the working mechanism of brain,
+                    we emphasize on its biophysical meaning, besides its ability of reproducing observed bio-signals.
+                    Rather than manipulating standard neural net models and then trying to load them with biophysical meaning,
+                    we customize neural network from scratch based on the previous most advanced biophysical model, Dynamic Causal Modeling (DCM).
+                    We propose a generalized RNN (GRNN) and show that DCM can be cast as a specific GRNN.
+                    The new DCM-RNN extends DCM with a more flexible framework, new estimation methods, and neural network compatibility.
                     In functional MRI (fMRI) experiments, DCM-RNN is shown to achieve more accurate causal
-                    architecture estimation and has more capacity of discovering simpler models among all the
+                    architecture estimation and has more capacity of discovering simpler models among possible
                     candidates than the classical DCM.
                 </p>
             </td>
@@ -109,9 +106,9 @@
                     AT&T is marching towards media content service.
                     As a result, it becomes critical for AT&T to provide its costumers with
                     great multimedia experience.
-                    We think video program segmentation is a fundamental for video curation, video personalization,
+                    We think video program segmentation is fundamental for video curation, video personalization,
                     targeted advertising, etc.
-                    In the summer, we focus on closed caption TV news program segmentation.
+                    In the summer, we focus on closed caption based TV news program segmentation.
                     New deep learning framework is proposed.
                 </p>
             </td>
@@ -127,14 +124,13 @@
             <td>
                 <p align="justify">
                     It is an ongoing project. Recently, the Human Connectome Project (HCP)
-                    released the S1200 data set, which contains fMRI scans for 1,200 subjects, more than one
+                    released the S1200 data set, which contains fMRI scans for 1,200 subjects, 1+
                     hour per subject. It will enable numerous exciting deep learning researches for clinical
                     tasks. FMRI is very high volume 4D data, 3D for spacial and 1D for temporal which
-                    makes classifier training hard, especially with limited training samples.
+                    makes classifier training hard, especially with limited samples.
                     We are try to train short-size-representation learning network using the S1200 data set,
-                    auto-encoder for spacial and RNN for temporal with person identification task.
-                    The trained network then can be used for other data set for various fMRI
-                    classification problems.
+                    auto-encoder for spacial and RNN for temporal.
+                    The trained network then can be used for other data set for various fMRI problems.
                 </p>
             </td>
         </tr>
@@ -163,9 +159,9 @@
                     Different objects of a painting typically have distinctively different
                     styles i.e. textures and color compositions while previous neural
                     painting works abstract a global style from a painting
-                    and apply it globally onto a photo.
-                    In this project, we separate objects of interest in both painting
-                    and real content photo and apply an art style only to the
+                    and apply it onto a whole photo.
+                    In this project, we separate objects of interest in both the painting
+                    and the real content photo and apply an art style only to the
                     corresponding objects. For example, abstract style from a flower
                     in a painting and apply it onto a flower in a real content photo.
                     It creates unique aesthetic experiences.
@@ -190,10 +186,10 @@
                 <p align="justify">
                     Researcher do a lot of literature survey, which is always a pain,
                     pain, in the sense that it is hard to get the 'big picture' of a field
-                    facing the endless and messy papers. There should be tools allowing people
+                    facing the endless and messy papers. There should be auto tools allowing people
                     to find out the most influential works and
                     see how the studies of a field evolves along time.
-                    But I cannot find such one. So I decided to make one myself.
+                    However I cannot find myself a satisfactory one and I decided to make one myself.
                     The main functionality of this tool includes:
                     <ul>
                         <li >
@@ -202,7 +198,7 @@
                             Graph edges indicate citation relationship.
                         </li>
                         <li >
-                            Features of each paper should be attached to the nodes.
+                            Features of each paper can be attached to the nodes.
                             Influential papers are highlighted.
                         </li>
                         <li >
