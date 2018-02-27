@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        text-align:justify;
+    }
+
+    .container {
+        align-content: center;
+    }
+
+    .centerImage
+    {
+        text-align:center;
+        display:block;
+        align-self: center;
+        /*width: 100px;*/
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+
+    }
+</style>
+</head>
+
+<body>
+    <section class="page-header">
+        <h1 class="project-name">Welcome, You found Yuan!</h1>
+        <h2 class="project-tagline">EE PhD candidate at NYU, data scientist, image/video/language processing with machine/deep learning.</h2>
+        <h2 class="project-tagline">为非凡的自我，勇敢探索；为卓越的生命，勇敢前行。</h2>
+    </section>
+
+    
+    <section class="main-content">
+
+        <div class="container">
+            <div class="col-4 col-m-4">
+                <img  class="centerImage" src="assets/images/homeHead.jpg" alt="Hi, I'm Yuan." >
+            </div>
+            <div class="col-8 col-m-8" >
+                <p>
+                    I am an EE PhD candidate at
+                    <a href="http://engineering.nyu.edu">Tandon School of Engineering</a>
+                    of
+                    <a href="https://www.nyu.edu">New York University</a>,
+                    supervised by Prof.
+                    <a href="http://engineering.nyu.edu/people/yao-wang">Yao Wang</a>
+                    and cosupervised by Prof.
+                    <a href="http://nyulangone.org/doctors/1538116645/yvonne-w-lui"> Yvonne W. Lui</a>.
+                    I am a data scientist, doing image, video, and language processing with machine/deep learning.
+                    I also prepared myself for AI, big data, and GPU programming, which I think matter.
+                </p>
+                <p>
+                    On this site, you can find some of my projects. Hope you enjoy :)
+                </p>
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <h2>Selected Projects</h2>
+        <hr/>
+
+
+        <table style="width:100%" cellspacing="0">
+            <tr>
+
+                <th colspan="2">
+                    <a href="https://yuanwangonward.github.io/DCM_RNN/">
+                        Biophysically interpretable neural network design
+                    </a>
+                </th>
+
+            </tr>
+
+            <tr>
+                <td width="220"><a href="https://yuanwangonward.github.io/DCM_RNN/">
+                    <img src="assets/images/DCM_RNN.png" alt="DCM_RNN.png" style="width:180px;height:180px;">
+                </a>
+            </td>
+            <td>
+                <p align="justify">
+                    Classical neural network focuses on performance of specific tasks,
+                    such as classification, detection, and recognition.
+                    The physical meaning of the internal structure of the neural networks is not of concern.
+                    Using neural networks as a tool of revealing the working mechanism of brain,
+                    we emphasize on its biophysical meaning, besides its ability of reproducing observed bio-signals.
+                    Rather than manipulating standard neural net models and then trying to load them with biophysical meaning,
+                    we customize neural network from scratch based on the previous most advanced biophysical model, Dynamic Causal Modeling (DCM).
+                    We propose a generalized RNN (GRNN) and show that DCM can be cast as a specific GRNN.
+                    The new DCM-RNN extends DCM with a more flexible framework, new estimation methods, and neural network compatibility.
+                    In functional MRI (fMRI) experiments, DCM-RNN is shown to achieve more accurate causal
+                    architecture estimation and has more capacity of discovering simpler models among possible
+                    candidates than the classical DCM.
+                </p>
+            </td>
+
+            <tr>
+                <th colspan="2">Closed caption based TV news segmentation using deep learning</th>
+            </tr>
+            <tr>
+                <td width="220">
+                    <center>
+                        <img src="assets/images/icon_news_segmentation.png" alt="" style="width:180px;height:137px;">
+                    </center>
+
+                </td>
+                <td>
+                    <p align="justify">
+                        It is a summer internship project at AT&T.
+                        AT&T is marching towards media content service.
+                        As a result, it becomes critical for AT&T to provide its costumers with
+                        great multimedia experience.
+                        We think video program segmentation is fundamental for video curation, video personalization,
+                        targeted advertising, etc.
+                        In the summer, we focus on closed caption based TV news program segmentation.
+                        New deep learning framework is proposed.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">Functional MRI classification with deep learning</th>
+            </tr>
+            <tr>
+                <td width="220">
+                    <img src="assets/images/reconstruction.png" alt="" style="width:190px;height:190px;">
+                </td>
+                <td>
+                    <p align="justify">
+                        It is an ongoing project. Recently, the Human Connectome Project (HCP)
+                        released the S1200 data set, which contains fMRI scans for 1,200 subjects, 1+
+                        hour per subject. It will enable numerous exciting deep learning researches for clinical
+                        tasks. FMRI is very high volume 4D data, 3D for spacial and 1D for temporal which
+                        makes classifier training hard, especially with limited samples.
+                        We are try to train short-size-representation learning network using the S1200 data set,
+                        auto-encoder for spacial and RNN for temporal.
+                        The trained network then can be used for other data set for various fMRI problems.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <a href="https://yuanwangonward.github.io/neural_art_style/">
+                        Neural painting
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td width="220">
+                    <a href="https://yuanwangonward.github.io/neural_art_style/">
+                        <center>
+                            <img src="assets/images/neural_painting.png" alt="" style="width:210px;height:210px;">
+                        </center>
+                    </a>
+                </td>
+                <td>
+                    <p align="justify">
+                        It's a course project I advised.
+                        Two brilliant and passionated master students at NYU,
+                        Megan Hardy and Sumanto Pal,
+                        start their adventure of image processing and deep learning.
+                        Different objects of a painting typically have distinctively different
+                        styles i.e. textures and color compositions while previous neural
+                        painting works abstract a global style from a painting
+                        and apply it onto a whole photo.
+                        In this project, we separate objects of interest in both the painting
+                        and the real content photo and apply an art style only to the
+                        corresponding objects. For example, abstract style from a flower
+                        in a painting and apply it onto a flower in a real content photo.
+                        It creates unique aesthetic experiences.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <a href="https://yuanwangonward.github.io/reference_graph_python/">
+                        Reference graph
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td width="220">
+                    <a href="https://yuanwangonward.github.io/reference_graph_python/">
+                        <img src="assets/images/icon_reference_graph.png" alt="" style="width:210px;height:159px;">
+                    </a>
+                </td>
+                <td>
+                    <p align="justify">
+                        Researcher do a lot of literature survey, which is always a pain,
+                        pain, in the sense that it is hard to get the 'big picture' of a field
+                        facing the endless and messy papers. There should be auto tools allowing people
+                        to find out the most influential works and
+                        see how the studies of a field evolves along time.
+                        However I cannot find myself a satisfactory one and I decided to make one myself.
+                        The main functionality of this tool includes:
+                        <ul>
+                            <li >
+                                Given a set of papers, visualize their relationship as a graph.
+                                Graph nodes are papers and they are arranged chronologically.
+                                Graph edges indicate citation relationship.
+                            </li>
+                            <li >
+                                Features of each paper can be attached to the nodes.
+                                Influential papers are highlighted.
+                            </li>
+                            <li >
+                                Given a set of papers, the tool is able to find the most related
+                                papers in terms of citation relationship. Namely, expand your paper pool.
+                            </li>
+                        </ul>
+                    </p>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="clear-floated"></div>
+        <h2  alignment='center'>Other Projects</h2>
+        <hr/>
+        <ul>
+
+            <li >
+                <a href="https://yuanwangonward.github.io/fisheye_tracking_and_clustering/">
+                    People tracking and clustering in fisheye video
+                </a>
+            </li>
+            <li>
+                <a href="https://yuanwangonward.github.io/fixed_dictionary_baseline/">
+                    A new fixed-dictionary baseline for compressive sensing MRI reconstruction
+                </a>
+            </li>
+            <li>
+                Gesture Recognition Based on Cell Phone In-Built MEMS Devices
+            </li>
+            <li>
+                Integrant Sphere Display Bright Room Contrast Measurement System
+            </li>
+            <li>
+                Traffic Light Recognition System for Color-blind People
+            </li>
+        </ul>
+
+    </body>
+
+    </html>

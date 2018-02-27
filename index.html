@@ -7,74 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=a81b5f6961da1c75e48a67ee60922f54848c3c8a">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        text-align:justify;
+    }
+
+    .image-home-head {
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        margin: auto;
+        vertical-align: middle;
+        display:block;  
+        max-width: 200px;
+        /*min-width: 150px;*/*/
+    }
+
+    .project-header {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .image-embedded {
+        width:12em;
+        float:left;
+        padding:1em;
+    }
+
+    .container {
+        border-bottom: solid 1px #eee;
+        margin-top: 1em;
+    }
+
+    .container-last {
+        margin-top: 1em;
+    }
+
+</style>
 </head>
 
 <body>
-<section class="page-header">
-    <h1 class="project-name">Welcome, You found Yuan!</h1>
-    <h2 class="project-tagline">EE PhD candidate at NYU, data scientist, image/video/language processing with
-        machine/deep learning, big data.</h2>
-    <h3 class="project-tagline">为非凡的自我，勇敢探索；为卓越的生命，勇敢前行。</h2>
-
-        <!--
-          <a href="http://github.com/YuanWangOnward/YuanWangOnward.github.io" class="btn">View on GitHub</a>
-        -->
-</section>
-
-
-<section class="main-content">
-    <div id="sidebar"></div>
-    <!--h2 id="Welcome">Welcome</h2-->
-
-    <div class="float-left-area">
-        <div class="inner-left">
-            <!--Left content. Add your main body of content to this side.-->
-            <img src="assets/images/homeHead.jpg" alt="homeHead">
+    <section class="page-header">
+        <h1 class="project-name">Welcome, You found Yuan!</h1>
+        <h2 class="project-tagline">
+            EE PhD candidate at NYU <br> 
+            data scientist, image/video/language processing with machine/deep learning
+        </h2>
+        <h2 class="project-tagline">为非凡的自我，勇敢探索；为卓越的生命，勇敢前行。</h2>
+    </section>
+    
+    <section class="main-content">
+        <div>
+            <div  class="col-4 col-m-4">
+                <img  class="image-home-head" src="assets/images/homeHead.jpg" alt="Hi, I'm Yuan." >
+            </div>
+            <div class="col-8 col-m-8" >
+                <p>
+                    I am an EE PhD candidate at
+                    <a href="http://engineering.nyu.edu">Tandon School of Engineering</a>
+                    of
+                    <a href="https://www.nyu.edu">New York University</a>,
+                    supervised by Prof.
+                    <a href="http://engineering.nyu.edu/people/yao-wang">Yao Wang</a>
+                    and cosupervised by Prof.
+                    <a href="http://nyulangone.org/doctors/1538116645/yvonne-w-lui"> Yvonne W. Lui</a>.
+                    I am a data scientist, doing image, video, and language processing with machine/deep learning.
+                    I also prepared myself for AI, big data, and GPU programming, the things that I think matter.
+                </p>
+                <p>
+                    On this site, you can find some of my projects. Hope you enjoy :)
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="float-right-text-vertically-centered">
-        <div class="inner-right" >
-            <br>
-            <p  align="justify" style="">
-                I am an EE PhD candidate at
-                <a href="http://engineering.nyu.edu">Tandon School of Engineering</a>
-                of
-                <a href="https://www.nyu.edu">New York University</a>,
-                supervised by Prof.
-                <a href="http://engineering.nyu.edu/people/yao-wang">Yao Wang</a>
-                and cosupervised by Prof.
-                <a href="http://nyulangone.org/doctors/1538116645/yvonne-w-lui"> Yvonne W. Lui</a>.
-                I am a data scientist, doing image/video/language processing with machine/deep learning.
-                I also prepared myself for big data and I'm actively learning GPU programming and AI, which I think matters.
-                On this site, you can find some of my projects. Hope you enjoy :)
-            </p>
-        </div>
-    </div>
+        <div style="clear: both;"></div>
 
-    <div class="clear-floated"></div>
-    <h2  alignment='center'>Selected Projects</h2>
-    <hr/>
+        <h2>Selected Projects</h2>
+        <hr>
 
-
-    <table style="width:100%" cellspacing="0">
-        <tr>
-
-            <th colspan="2">
+        <div class="container">
+            <p class="project-header">
                 <a href="https://yuanwangonward.github.io/DCM_RNN/">
                     Biophysically interpretable neural network design
                 </a>
-            </th>
+            </p>
 
-        </tr>
-
-        <tr>
-            <td width="220"><a href="https://yuanwangonward.github.io/DCM_RNN/">
-                <img src="assets/images/DCM_RNN.png" alt="DCM_RNN.png" style="width:180px;height:180px;">
-            </a>
-            </td>
-            <td>
-                <p align="justify">
+            <div class="project-introduction">
+                <img class="image-embedded" src="assets/images/DCM_RNN.png" alt="DCM_RNN.png">
+                <p>
                     Classical neural network focuses on performance of specific tasks,
                     such as classification, detection, and recognition.
                     The physical meaning of the internal structure of the neural networks is not of concern.
@@ -88,20 +111,17 @@
                     architecture estimation and has more capacity of discovering simpler models among possible
                     candidates than the classical DCM.
                 </p>
-            </td>
+            </div>
+        </div>
 
-        <tr>
-            <th colspan="2">Closed caption based TV news segmentation using deep learning</th>
-        </tr>
-        <tr>
-            <td width="220">
-                <center>
-                    <img src="assets/images/icon_news_segmentation.png" alt="" style="width:180px;height:137px;">
-                </center>
+        <div class="container">
+            <p class="project-header">
+                Closed caption based TV news segmentation using deep learning
+            </p>
 
-            </td>
-            <td>
-                <p align="justify">
+            <div class="project-introduction">
+                <img class="image-embedded" src="assets/images/icon_news_segmentation.png">
+                <p>
                     It is a summer internship project at AT&T.
                     AT&T is marching towards media content service.
                     As a result, it becomes critical for AT&T to provide its costumers with
@@ -111,18 +131,17 @@
                     In the summer, we focus on closed caption based TV news program segmentation.
                     New deep learning framework is proposed.
                 </p>
-            </td>
-        </tr>
+            </div>
+        </div>
 
-        <tr>
-            <th colspan="2">Functional MRI classification with deep learning</th>
-        </tr>
-        <tr>
-            <td width="220">
-                <img src="assets/images/reconstruction.png" alt="" style="width:190px;height:190px;">
-            </td>
-            <td>
-                <p align="justify">
+        <div class="container">
+            <p class="project-header">
+                Functional MRI classification with deep learning
+            </p>
+
+            <div class="project-introduction">
+                <img class="image-embedded" src="assets/images/reconstruction.png">
+                <p>
                     It is an ongoing project. Recently, the Human Connectome Project (HCP)
                     released the S1200 data set, which contains fMRI scans for 1,200 subjects, 1+
                     hour per subject. It will enable numerous exciting deep learning researches for clinical
@@ -132,26 +151,19 @@
                     auto-encoder for spacial and RNN for temporal.
                     The trained network then can be used for other data set for various fMRI problems.
                 </p>
-            </td>
-        </tr>
+            </div>
+        </div>
 
-        <tr>
-            <th colspan="2">
+        <div class="container">
+            <p class="project-header">
                 <a href="https://yuanwangonward.github.io/neural_art_style/">
                     Neural painting
                 </a>
-            </th>
-        </tr>
-        <tr>
-            <td width="220">
-                <a href="https://yuanwangonward.github.io/neural_art_style/">
-                    <center>
-                        <img src="assets/images/neural_painting.png" alt="" style="width:210px;height:210px;">
-                    </center>
-                </a>
-            </td>
-            <td>
-                <p align="justify">
+            </p>
+
+            <div class="project-introduction">
+                <img class="image-embedded" src="assets/images/neural_painting.png">
+                <p>
                     It's a course project I advised.
                     Two brilliant and passionated master students at NYU,
                     Megan Hardy and Sumanto Pal,
@@ -166,24 +178,19 @@
                     in a painting and apply it onto a flower in a real content photo.
                     It creates unique aesthetic experiences.
                 </p>
-            </td>
-        </tr>
+            </div>
+        </div>
 
-        <tr>
-            <th colspan="2">
+        <div class="container-last ">
+            <p class="project-header">
                 <a href="https://yuanwangonward.github.io/reference_graph_python/">
                     Reference graph
                 </a>
-            </th>
-        </tr>
-        <tr>
-            <td width="220">
-                <a href="https://yuanwangonward.github.io/reference_graph_python/">
-                    <img src="assets/images/icon_reference_graph.png" alt="" style="width:210px;height:159px;">
-                </a>
-            </td>
-            <td>
-                <p align="justify">
+            </p>
+
+            <div class="project-introduction">
+                <img class="image-embedded" src="assets/images/icon_reference_graph.png">
+                <p>
                     Researcher do a lot of literature survey, which is always a pain,
                     pain, in the sense that it is hard to get the 'big picture' of a field
                     facing the endless and messy papers. There should be auto tools allowing people
@@ -207,37 +214,39 @@
                         </li>
                     </ul>
                 </p>
-            </td>
-        </tr>
+            </div>
+        </div>
 
-    </table>
 
-    <div class="clear-floated"></div>
-    <h2  alignment='center'>Other Projects</h2>
-    <hr/>
-    <ul>
 
-        <li >
-            <a href="https://yuanwangonward.github.io/fisheye_tracking_and_clustering/">
-                People tracking and clustering in fisheye video
-            </a>
-        </li>
-        <li>
-            <a href="https://yuanwangonward.github.io/fixed_dictionary_baseline/">
+        <h2  alignment='center'>Other Projects</h2>
+        <hr/>
+        <ul>
+
+            <li >
+                <a href="https://yuanwangonward.github.io/fisheye_tracking_and_clustering/">
+                    People tracking and clustering in fisheye video
+                </a>
+            </li>
+            <li>
+                <a href="https://yuanwangonward.github.io/fixed_dictionary_baseline/">
                     A new fixed-dictionary baseline for compressive sensing MRI reconstruction
-            </a>
-        </li>
-        <li>
-            Gesture Recognition Based on Cell Phone In-Built MEMS Devices
-        </li>
-        <li>
-            Integrant Sphere Display Bright Room Contrast Measurement System
-        </li>
-        <li>
-            Traffic Light Recognition System for Color-blind People
-        </li>
-    </ul>
+                </a>
+            </li>
+            <li>
+                Gesture Recognition Based on Cell Phone In-Built MEMS Devices
+            </li>
+            <li>
+                Integrant Sphere Display Bright Room Contrast Measurement System
+            </li>
+            <li>
+                Traffic Light Recognition System for Color-blind People
+            </li>
+        </ul>
 
-</body>
 
-</html>
+
+
+    </body>
+
+    </html>
