@@ -175,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1505676134988</updated>
       <workItem from="1519830282734" duration="7000" />
-      <workItem from="1519830622444" duration="5647000" />
+      <workItem from="1519830622444" duration="5658000" />
     </task>
     <task id="LOCAL-00001" summary="add internship project.">
       <created>1505676837588</created>
@@ -226,11 +226,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519847765876</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add dcm rnn page.">
+      <created>1519847777341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1519847777341</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5654000" />
+    <option name="totallyTimeSpent" value="5665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="142" y="23" width="1097" height="703" extended-state="0" />
