@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>neural painting</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        .p_continued {
+            text-indent: 0px;
+        }
+
+
+        img {
+            /*float:right;*/
+        }
+        /*figcaption {*/
+            /*font-size: 0.9em;*/
+            /*font-style: italic;*/
+            /*text-align: center;*/
+            /*max-width: 80%;*/
+        /*}*/
+
+        figure {
+            /*border: black 1px solid;*/
+            text-align: center;
+        }
+
+        .figure_extended {
+            margin-left: 0px;
+            width:100%;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="page-header">
+    <h1 class="project-name">More Than One</h1>
+    <h2 class="project-tagline">
+        Neural painting with multiple styles.
+    </h2>
+    <!--<a href="https://github.com/YuanWangOnward/neural_painting.html" class="btn">View on GitHub</a>-->
+</section>
+
+
+<section class="main-content">
+    <h2>Introduction</h2>
+    <p>
+        It's a course project I advised.
+        Two brilliant and passionated master students at NYU,
+        Megan Hardy and Sumanto Pal,
+        start their adventure of image processing and deep learning.
+        Different objects of a painting typically have distinctively different
+        styles i.e. textures and color compositions while previous neural
+        painting works abstract a global style from a painting
+        and apply it globally onto a photo.
+        In this project, we separate objects of interest in both painting
+        and real content photo and apply an art style only to the
+        corresponding objects. For example, abstract style from a flower
+        in a painting and apply it onto a flower in a real content photo.
+        It creates unique aesthetic experiences.
+    </p>
+
+
+    <h2> Object segmentation</h2>
+    <p>
+        As the first challenge, we use Grabcut to segment objects of interest.
+        Grabcut is a segmentation technique which requires minimal level of
+        human intervene while is able to achieve highly details-preserving
+        results.
+    </p>
+
+    <figure>
+        <img width="332" height="240"  src="assets/images/grabcut_1.png?raw=true" >
+        <img width="332" height="240"  src="assets/images/grabcut_2.png?raw=true" >
+        <figcaption>
+            Fig. 1 Grabcut example. One can simply place a bounding box
+            around the object of interest and may need to roughly
+            indicate object with white marker and non-object with black
+            marker. Then the object can be segmented nicely.
+        </figcaption>
+    </figure>
+
+    <h2>Painting with multiple styles</h2>
+
+    <p>
+        After some intermediary and post processing, we are able to
+        abstract styles from objects in paintings and apply them onto
+        corresponding objects in real content photos.
+    </p>
+
+    <figure class="figure_extended">
+        <img width="276" height="153"  src="assets/images/result_1_1.png?raw=true" >
+        <img width="233" height="153"  src="assets/images/result_1_2.png?raw=true" >
+        <img width="276" height="153"  src="assets/images/result_1_3.png?raw=true" >
+        <figcaption>
+            Fig. 2 Flower style on flower.
+        </figcaption>
+    </figure>
+
+    <figure class="figure_extended">
+        <img width="270" height="297"  src="assets/images/result_2_1.png?raw=true" >
+        <img width="270" height="297"  src="assets/images/result_2_2.png?raw=true" >
+        <img width="270" height="297"  src="assets/images/result_2_3.png?raw=true" >
+        <figcaption>
+            Fig. 3 Jordon in the space (background styled only).
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img width="340" height="225"  src="assets/images/result_3_1.png?raw=true" >
+        <img width="340" height="225"  src="assets/images/result_3_4.png?raw=true" >
+        <img width="178" height="272"  src="assets/images/result_3_2.png?raw=true" >
+        <img width="348" height="272"  src="assets/images/result_3_3.png?raw=true" >
+        <figcaption>
+            Fig. 3 Separated style for foreground and background.
+        </figcaption>
+    </figure>
+
+    <h2>Publication</h2>
+    <p class="p_continued">
+    Hardy, Megan, and Sumanto Pal, "Split Consideration for Foreground and Background Painting Using Artificial Neural Networks," Proceedings of the 2017 ACM on Multimedia Conference, 2017.
+    </p>
+
+    <h2>References</h2>
+    <ul>
+        <li><a href="http://arxiv.org/abs/1508.06576">
+            A Neural Algorithm of Artistic Style
+        </a></li>
+        <li><a href="https://github.com/jcjohnson/neural-style">
+            https://github.com/jcjohnson/neural-style
+        </a></li>
+        <li><a href="https://github.com/ckmarkoh/neuralart_tensorflow">
+            https://github.com/ckmarkoh/neuralart_tensorflow
+        </a></li>
+        <li><a href="https://github.com/log0/neural-style-painting">
+            https://github.com/log0/neural-style-painting
+        </a></li>
+    </ul>
+
+    <a href="https://yuanwangonward.github.io">Back to Yuan's homepage</a>
+
+</section>
+</body>
+</html>
