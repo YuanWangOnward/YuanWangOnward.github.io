@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reference graph</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        .p_continued {
+            text-indent: 0px;
+        }
+
+        img {
+            /*float:right;*/
+        }
+        /*figcaption {*/
+        /*font-size: 0.9em;*/
+        /*font-style: italic;*/
+        /*text-align: center;*/
+        /*max-width: 80%;*/
+        /*}*/
+
+        figure {
+            /*border: black 1px solid;*/
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .figure_extended {
+            margin-left: 0px;
+            width:100%;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="page-header">
+    <h1 class="project-name">Reference Graph</h1>
+    <h2 class="project-tagline">
+        It's about literature visualization, search, and management.
+    </h2>
+    <!--<a href="https://github.com/YuanWangOnward/reference_graph_python.html" class="btn">View on GitHub</a>-->
+</section>
+
+
+<section class="main-content">
+    <h2>Introduction</h2>
+    <p>
+        Researchers do a lot of literature survey, which is always a pain,
+        pain, in the sense that it is hard to get the 'big picture' of a field
+        facing the endless and messy papers. There should be auto tools allowing people
+        to find out the most influential works so
+        see how the studies of a field evolves along time.
+        However I cannot find myself a satisfactory one and I decided to make one myself.
+        The main functionality of this tool includes:
+    <ul>
+        <li >
+            Given a set of papers, visualize their relationship as a graph.
+            Graph nodes are papers and they are arranged chronologically.
+            Graph edges indicate citation relationship.
+        </li>
+        <li >
+            Features of each paper can be attached to the nodes.
+            Influential papers are highlighted.
+        </li>
+        <li >
+            Given a set of papers, the tool is able to find the most related
+            papers in terms of citation relationship. Namely, expand your paper pool.
+        </li>
+    </ul>
+    </p>
+
+
+    <h2>Demos</h2>
+    <figure>
+        <img src="assets/images/graph_story_segmentation.png?raw=true" >
+        <figcaption>
+            Fig. 1 Reference graph for text based story segmentation.
+            Features of each study are listed in each node.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/images/graph_sentense_representation.png?raw=true" >
+        <figcaption>
+            Fig. 2 Reference graph for deep learning based sentence representation
+            and classification. Node color and font size encode the citation
+            number of each graph indicating its impact of the community. In this
+            graph, it's very easy to find out the influential works and how the
+            field evolves along time.
+        </figcaption>
+    </figure>
+
+    <a href="index.html">Back to Yuan's homepage</a>
+</section>
+</body>
+</html>
