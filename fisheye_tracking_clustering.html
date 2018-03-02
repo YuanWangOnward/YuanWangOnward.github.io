@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fisheye tracking and clustering</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        .p_continued {
+            text-indent: 0px;
+        }
+
+        img {
+            /*float:right;*/
+        }
+        /*figcaption {*/
+        /*font-size: 0.9em;*/
+        /*font-style: italic;*/
+        /*text-align: center;*/
+        /*max-width: 80%;*/
+        /*}*/
+
+        figure {
+            /*border: black 1px solid;*/
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .figure_extended {
+            margin-left: 0px;
+            width:100%;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="page-header">
+    <h1 class="project-name">Games in Fisheye</h1>
+    <h2 class="project-tagline">
+        People tracking and clustering in a fisheye video.
+    </h2>
+    <!--<a href="https://github.com/YuanWangOnward/reference_graph_python.html" class="btn">View on GitHub</a>-->
+</section>
+
+
+<section class="main-content">
+    <h2>Introduction</h2>
+    <p>
+        This project originates from automated game evaluation.
+        A fisheye camera is used to capture a room where
+        people are playing a newly designed social game.
+        In the gram, two teams compete with each other and
+        the team dancing in higher sync win the game.
+    </p>
+
+    <p>
+        In the previous work, people are detected and marked with a bounding
+        box as in Fig. 1. In the work, we track and clustering people
+        into groups. People in each group should have similar behavior
+        and group is the minimal study unit in the following game evaluation.
+    </p>
+
+
+    <figure>
+        <img style="width:300px; height:300px;" src="assets/images/detected_people.png?raw=true">
+        <figcaption>
+            Fig. 1 Detected people are marked with a boundary box.
+        </figcaption>
+    </figure>
+
+
+    <h2>Tracking</h2>
+    <p>
+        The basic idea of tracking is searching for the most similar boundary
+        box in the coming frame. However, in fisheye video, as people move,
+        the bounding boxes undergo significant deformation and it needs to be
+        taken into consideration when comparing box contents. We handle it by
+        reconstructing the real scene from the fisheye video based on fisheye
+        imaging model and using persisting physical constants as the clues
+        to predict the box deformation. Of course, it is really possible
+        to reconstruct the real scene from a single fisheye camera. Strong
+        assumption about the real scene is used which is enough for the
+        tracking task.
+    </p>
+
+    <figure>
+        <img src="assets/images/tracking_1.gif?raw=true">
+        <figcaption>
+            Fig. 2 People tracking showcase 1.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/images/tracking_2.gif?raw=true">
+        <figcaption>
+            Fig. 3 People tracking showcase 2.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/images/tracking_3.gif?raw=true">
+        <figcaption>
+            Fig. 4 People tracking showcase 3.
+        </figcaption>
+    </figure>
+
+    <h2>Clustering</h2>
+    <p>
+        After tracking, the trajectory of each people is obtained.
+        Meanshift is then used for clustering, using people location and
+        motion energy spectrum as features.
+    </p>
+    <figure class="figure_extended">
+        <img style="width:270px; height:234px;" src="assets/images/clustering_1_1.gif?raw=true">
+        <img style="width:270px; height:234px;" src="assets/images/clustering_1_2.jpeg?raw=true" >
+        <img style="width:270px; height:234px;" src="assets/images/clustering_1_3.jpeg?raw=true">
+        <figcaption>
+            Fig. 5 People clustering showcase 1.
+        </figcaption>
+    </figure>
+    <figure class="figure_extended">
+        <img style="width:270px; height:234px;" src="assets/images/clustering_2_1.gif?raw=true">
+        <img style="width:270px; height:234px;" src="assets/images/clustering_2_2.jpeg?raw=true" >
+        <img style="width:270px; height:234px;" src="assets/images/clustering_2_3.jpeg?raw=true">
+        <figcaption>
+            Fig. 6 People clustering showcase 2.
+        </figcaption>
+    </figure>
+
+    <a href="index.html">Back to Yuan's homepage</a>
+
+</section>
+</body>
+</html>
